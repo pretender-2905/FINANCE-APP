@@ -66,7 +66,7 @@ function Hero({ amount,
                     return(
                     <div key={index} className="flex justify-center my-2 ">
                     <h1 className="font-semibold w-70  text-3xl">{index + 1}{')'}{data.amount}</h1>
-                    <h1 className="font-semibold text-3xl">{data.type}</h1>
+                    <h1 className={`font-semibold text-3xl ${data.type == "income" ? "text-green-600" : "text-red-600"}`}>{data.type}</h1>
                     </div>
                     )
                 })
